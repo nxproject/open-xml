@@ -1,0 +1,106 @@
+trigger:
+- master
+
+pr:
+  autoCancel: true
+  branches:
+    include:
+    - master
+
+variables:
+  RunPeVerify: true
+
+stages:
+  - stage: Build
+    jobs:
+      - template: build.yml
+        parameters:
+          buildTargets:
+            - name: DevFramework35
+              vmImages: 
+                - image: 'windows-2019'
+                  name: 'windows'
+            - name: DevFramework40
+              vmImages: 
+                - image: 'windows-2019'
+                  name: 'windows'
+            - name: DevFramework46
+              vmImages: 
+                - image: 'windows-2019'
+                  name: 'windows'
+            - name: DevCore11
+              runtimes:
+                - 1.1.13
+                - 2.1.18
+              vmImages: 
+                - image: 'windows-2019'
+                  name: 'windows'
+                - image: 'ubuntu-latest'
+                  name: 'linux'
+            - name: DevCore21
+              runtimes:
+                - 2.1.18
+              vmImages: 
+                - image: 'windows-2019'
+                  name: 'windows'
+                - image: 'ubuntu-latest'
+                  name: 'linux'
+            - name: DevCore31
+              vmImages: 
+                - image: 'windows-2019'
+                  name: 'windows'
+                - image: 'ubuntu-latest'
+                  name: 'linux'
+
+  - stage: Package
+    jobs:
+      - template: package.yml
+    condition: ne(variables['Build.Reason'], 'PullRequest')
+
+  - stage: Sign
+    jobs:
+    - job: Sign
+      displayName: Sign assemblies and package
+      pool:
+        name: Hosted Windows 2019 with VS2019
+      steps:
+        - template: sign.yml
+    dependsOn: Package
+    condition: succeeded()
+  
+  - stage: MyGet
+    jobs:
+      - deployment: OpenXmlMyGet
+        displayName: Deploy to MyGet
+        pool:
+          name: Hosted Windows 2019 with VS2019
+        environment: 'openxmlsdk-dotnet-myget'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - template: nuget.yml
+                  parameters:
+                    feed: 'OpenXML MyGet Feed'
+    dependsOn: 
+      - Build
+      - Sign
+    condition: succeeded()
+
+  - stage: NuGet
+    jobs:
+      - deployment: OpenXmlNuGet
+        displayName: Deploy to NuGet
+        pool:
+          name: Hosted Windows 2019 with VS2019
+        environment: 'openxmlsdk-dotnet-nuget'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - template: nuget.yml
+                  parameters:
+                    feed: 'OpenXML NuGet Feed'
+    dependsOn: 
+      - MyGet
+    condition: and(succeeded(), variables['ReleaseNuGet'], eq(variables['Build.SourceBranchName'], 'master'))

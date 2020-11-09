@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">  
+<PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>  
+<ItemGroup>
+  <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+</ItemGroup>  
+<ItemGroup>
+  <ProjectReference Include="..\DocumentFormat.OpenXml\DocumentFormat.OpenXml.csproj" />
+</ItemGroup>
+</Project>
