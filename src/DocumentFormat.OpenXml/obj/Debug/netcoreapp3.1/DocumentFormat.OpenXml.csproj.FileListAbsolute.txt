@@ -1,0 +1,17 @@
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.deps.json
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.pdb
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\bin\Debug\netcoreapp3.1\System.IO.Packaging.dll
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.csprojAssemblyReference.cache
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.Resources.ExceptionMessages.resources
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.Validation.ValidationResources.resources
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.csproj.GenerateResource.cache
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.AssemblyInfoInputs.cache
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.AssemblyInfo.cs
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.csproj.CoreCompileInputs.cache
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.csproj.CopyComplete
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
+C:\Candid Concepts\NX\Workspace\TP\Open-XML-SDK-master\src\DocumentFormat.OpenXml\obj\Debug\netcoreapp3.1\DocumentFormat.OpenXml.pdb

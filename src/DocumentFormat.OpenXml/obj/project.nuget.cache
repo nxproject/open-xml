@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "5nC67NG9F3cc8Iep4uQ71e2ZQJj2/9w6rKIh2/QsNsIJhDJ2M3VfxZqzMGYAWYlbO8K9acORd5kLg7UI5IqrEQ==",
+  "success": true,
+  "projectFilePath": "C:\\Candid Concepts\\NX\\Others\\Open-XML-SDK-master\\src\\DocumentFormat.OpenXml\\DocumentFormat.OpenXml.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JoseG\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\JoseG\\.nuget\\packages\\system.io.packaging\\5.0.0\\system.io.packaging.5.0.0.nupkg.sha512",
+    "C:\\Users\\JoseG\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\JoseG\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
